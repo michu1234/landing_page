@@ -1,0 +1,18 @@
+@import '../helpers/placeholders';
+@import '../helpers/variables';
+@import '../helpers/mixins/clearfix';
+@import '../helpers/mixins/list-reset';
+@import '../helpers/mixins/responsive';
+
+
+.divider {
+    border-color: $normal-navy;
+
+    &--normal {
+        border-width: 50px;
+    }
+
+    &--short {
+        border-width: 40px;
+    }
+}

@@ -1,0 +1,19 @@
+@import '../helpers/placeholders';
+@import '../helpers/variables';
+@import '../helpers/mixins/clearfix';
+@import '../helpers/mixins/list-reset';
+@import '../helpers/mixins/responsive';
+
+
+
+.btn {
+    background: $normal-navy;
+    color: $pure-white;
+    text-transform: uppercase;
+    @extend %pointer;
+    font-size: 1.2rem;
+    padding: 16px 23px 15px;
+    @extend %text--center;
+    border-radius: 20px;
+    border: none;
+}

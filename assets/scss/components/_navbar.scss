@@ -1,0 +1,19 @@
+@import '../helpers/placeholders';
+@import '../helpers/variables';
+@import '../helpers/mixins/clearfix';
+@import '../helpers/mixins/list-reset';
+@import '../helpers/mixins/responsive';
+
+
+
+nav {
+    @extend %flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $pure-white;
+    border: 1px solid red;
+}
