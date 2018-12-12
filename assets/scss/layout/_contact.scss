@@ -6,4 +6,10 @@
 
 .contact {
     background-color: $normal-navy;
+    color: $pure-white;
+
+    &__item {
+        text-align: left !important;
+    }
+
 }

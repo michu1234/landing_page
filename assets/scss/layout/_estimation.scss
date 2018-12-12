@@ -4,3 +4,7 @@
 @import '../helpers/mixins/list-reset';
 @import '../helpers/mixins/responsive';
 
+.estimation {
+    background: $medium-gray;
+    padding-top: 100px;
+}

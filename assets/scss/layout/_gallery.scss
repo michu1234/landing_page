@@ -4,3 +4,12 @@
 @import '../helpers/mixins/list-reset';
 @import '../helpers/mixins/responsive';
 
+.gallery {
+ h3 {
+     padding-right: 15px;
+ }
+ img {
+     max-width: 100%;
+ }
+
+}

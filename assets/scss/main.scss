@@ -6,10 +6,12 @@
 
 // base
 @import './base/base';
+@import './base/bootstrap-grid.min';
 @import './base/normalize';
 
 // components
 @import './components/button.scss';
+@import './components/divider.scss';
 @import './components/navbar.scss';
 
 // layout

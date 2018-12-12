@@ -4,3 +4,17 @@
 @import '../helpers/mixins/list-reset';
 @import '../helpers/mixins/responsive';
 
+.questions {
+
+
+    &__h2 {
+        max-width: 752px;
+        position: relative;
+        text-align: left;
+    }
+
+    &__p {
+        max-width: 752px;
+        text-align: left;
+    }
+}

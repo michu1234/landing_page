@@ -8,11 +8,13 @@
 @font-face {
     font-family: 'Raleway';
     src: url('../fonts/Raleway-Regular.ttf');
+    font-displaly: swap;
 }
 
 @font-face {
     font-family: 'Raleway-Bold';
     src: url('../fonts/Raleway-Bold.ttf');
+    font-displaly: swap;
 }
 
 * {
@@ -25,6 +27,13 @@ html {
     background-color: $pure-white;
 }
 
+a {
+    color: $pure-white !important;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-family: 'Raleway-Bold'
+}
+
 h2 {
     font-size: 2.9rem;
     font-family: "Raleway-Bold";
@@ -32,6 +41,18 @@ h2 {
     color: $almost-dark;
     @extend %text--center;
     @extend %uppercase;
+}
+
+h3 {
+    font-size: 2.2rem;
+    font-family: "Raleway-Bold";
+    @extend %uppercase;
+    @extend %text--center;
+    color: $almost-dark;
+}
+
+h4 {
+    font-size: 1.8rem;
 }
 
 p {

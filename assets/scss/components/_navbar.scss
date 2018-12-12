@@ -12,8 +12,12 @@ nav {
     left: 0;
     top: 0;
     right: 0;
-    justify-content: space-between;
     align-items: center;
     background-color: $pure-white;
     border: 1px solid red;
+    z-index: 5;
+
+    &__brands {
+        
+    }
 }

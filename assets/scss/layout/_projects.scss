@@ -4,3 +4,11 @@
 @import '../helpers/mixins/list-reset';
 @import '../helpers/mixins/responsive';
 
+.projects {
+    background-color: $medium-gray;
+    text-align: center;
+
+    img {
+        max-width: 100%;
+    }
+}

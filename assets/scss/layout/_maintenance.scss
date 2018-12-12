@@ -4,3 +4,17 @@
 @import '../helpers/mixins/list-reset';
 @import '../helpers/mixins/responsive';
 
+.maintenance {
+    background: $medium-gray;
+    @extend %text--center;
+
+    ul {
+        font-size: 1.4rem;
+        @include list-reset;
+    }
+
+    li {
+        padding: 10px 0 10px 0;
+        max-width: 370px;
+    }
+}
