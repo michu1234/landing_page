@@ -9,14 +9,21 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav__logo col-md-4"><img src="./assets/img/logo.jpg" alt=""></div>
-        <div class="nav__brands col-md-4 d-flex justify-content-center"><img src="./assets/img/google-reviews.jpg" alt=""><img
-                src="./assets/img/bbb-reviews.jpg" alt=""><img src="./assets/img/yelp-reviews.jpg" alt=""></div>
-        <div class="nav__contact col-md-4 d-flex justify-content-end align-items-center">
-            <div class="nav__icon">
-                <img src="./assets/img/phone.jpg" alt="">
-            </div>(847) 316-0224 <button class="btn">Click For Free Estimate!</button>
+    <nav class="">
+        <div class="container d-flex flex-column flex-md-row">
+            <div class="nav__logo col-md-5"><img src="./assets/img/logo.jpg" alt=""></div>
+            <div class="nav__brands col-md-2 d-flex justify-content-center align-items-center">
+                <img src="./assets/img/google-reviews.jpg" alt="">
+                <img src="./assets/img/bbb-reviews.jpg" alt="">
+                <img src="./assets/img/yelp-reviews.jpg" alt=""></div>
+            <div class="nav__contact col-md-5 d-flex flex-column flex-xl-row justify-content-center justify-content-xl-end align-items-center align-items-md-end align-items-xl-center">
+                <div class="nav__icon d-flex align-items-center">
+                    <div>
+                        <img src="./assets/img/phone.jpg" alt="">
+                    </div>
+                    <p class="nav__phone">(847) 316-0224</p>
+                </div><button class="btn">Click For Free Estimate!</button>
+            </div>
         </div>
     </nav>
 
@@ -281,7 +288,7 @@
                 </div>
             </div>
             <div class="col-md-4 contact__items">
-                <div class="contact__item d-flex justify-content-between align-items-center">
+                <div class="contact__item d-flex align-items-center">
                     <div class="contact__img"><img src="./assets/img/map_icon.jpg" alt=""></div>
                     <p>163 S. Fremont Street,<br>
                         Palatine,<br>
@@ -289,9 +296,9 @@
                 </div>
             </div>
             <div class="col-md-4 contact__items">
-                <div class="contact__item d-flex justify-content-between align-items-center">
+                <div class="contact__item d-flex align-items-center">
                     <div class="contact__img"><img src="./assets/img/security_icon.jpg" alt=""></div>
-                    <a href="">Open 7 Days A Week - 24 Hours<br> A Day</a>
+                    <a class="contact__link" href="">Open 7 Days A Week - 24 Hours A Day</a>
                 </div>
             </div>
         </div>
@@ -299,7 +306,7 @@
     </section>
 
     <section class="summary">
-        <div class="container d-flex flex-column flex-lg-row align-items-center">
+        <div class="container d-flex flex-column flex-lg-row align-items-start">
             <div class="col-lg-4">
                 <div class="summary__wrapper">
                     <h3>WHY SEXTON HARDWOOD FLOORING?</h3>
@@ -334,7 +341,7 @@
                     <h3>OFFICE LOCATION MAP</h3>
                     <hr class="divider divider--short divider--absolute">
                 </div>
-                <div><img src="./assets/img/sexton-hardwood-flooring-map.jpg" alt=""></div>
+                <div class="summary__img"><img src="./assets/img/sexton-hardwood-flooring-map.jpg" alt=""></div>
             </div>
 
         </div>

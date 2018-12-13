@@ -25,6 +25,7 @@
 
     button {
         margin: 20px 0 20px 0;
+        min-width: 132px;
     }
 
     @include media-query(tablet) {

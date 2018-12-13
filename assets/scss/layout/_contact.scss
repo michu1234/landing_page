@@ -8,14 +8,33 @@
     background-color: $normal-navy;
     color: $pure-white;
 
+
+
     &__item {
         p {
             text-align: left;
-            padding-left: 30px;
+            padding-left: 20px;
         }
 
         a {
             text-align: left;
+        }
+    }
+
+    &__link {
+        padding-left: 20px;
+    }
+
+
+    @include media-query(mobile_plus) {
+        &__items {
+            padding-left: 40%;
+        }
+    }
+
+    @include media-query(tablet) {
+        &__items {
+            padding-left: 0;
         }
     }
 

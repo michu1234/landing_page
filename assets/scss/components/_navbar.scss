@@ -14,10 +14,42 @@ nav {
     right: 0;
     align-items: center;
     background-color: $pure-white;
-    border: 1px solid red;
+    box-shadow: 0 0 10px $darker-gray;
     z-index: 5;
+    padding-bottom: 20px;
 
-    &__brands {
-        
+    .nav__phone {
+        font-size: 1.4rem;
+        color: $normal-navy;
+        padding-right: 20px;
     }
+
+    .nav__logo {
+        text-align: center;
+    }
+
+        img {
+            padding: 10px;
+        }
+
+
+        button {
+            min-width: 205px;
+            margin-top: -15px;
+        }
+
+        @include media-query(tablet) {
+
+            padding-bottom: 0;
+
+            .nav__logo {
+                text-align: left;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            button {
+                margin-top: 0;
+            }
+        }
 }

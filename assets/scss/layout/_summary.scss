@@ -24,7 +24,7 @@
          
         li {
             line-height: 24px;
-            padding-left: 30px;
+            padding-left: 10px;
             padding-top: 3px;
             color: $normal-navy;
             font-weight: 600;
@@ -35,4 +35,34 @@
     &__wrapper {
         @extend %relative;
     }
+
+    &__img {
+        text-align: center;
+    }
+
+    @include media-query(mobile) {
+        float: none;
+    }
+
+    @include media-query(mobile_plus) {
+        li {
+            float: left;
+            width: 50%;
+        }
+    }
+
+    @media screen and (min-width: 840px) {
+        li {
+            float: left;
+            width: 33%;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        li {
+            float: none;
+            width: 100%;
+        }
+    }
+
 }
