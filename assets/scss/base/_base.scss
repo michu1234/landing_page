@@ -35,12 +35,17 @@ a {
 }
 
 h2 {
-    font-size: 2.9rem;
+    font-size: 2.1rem;
     font-family: "Raleway-Bold";
-    line-height: 40px;
+    line-height: 30px;
     color: $almost-dark;
     @extend %text--center;
     @extend %uppercase;
+
+    @include media-query(tablet) {
+        font-size: 2.9rem;
+        line-height: 40px;
+    }
 }
 
 h3 {
@@ -57,8 +62,12 @@ h4 {
 
 p {
     font-family: 'Raleway';
-    font-size: 16px;
+    font-size: 1.4rem;
     line-height: 26px;
     padding: 0;
     @extend %text--center;
+
+    @include media-query(tablet_plus) {
+        font-size: 1.6rem;
+    }
 }

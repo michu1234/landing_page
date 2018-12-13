@@ -5,16 +5,36 @@
 @import '../helpers/mixins/responsive';
 
 .questions {
-
+    margin-top: 300px;
+    padding-bottom: 20px;
 
     &__h2 {
         max-width: 752px;
         position: relative;
-        text-align: left;
+        @extend %text--center;
     }
 
     &__p {
         max-width: 752px;
-        text-align: left;
+        @extend %text--center;
+    }
+
+    &__image {
+        text-align: center;
+    }
+
+    button {
+        margin: 20px 0 20px 0;
+    }
+
+    @include media-query(tablet) {
+        
+        p,h2 {
+            text-align: left;
+        }
+
+        button {
+            margin: 0;
+        }
     }
 }

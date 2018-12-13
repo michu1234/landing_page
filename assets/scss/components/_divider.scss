@@ -15,4 +15,9 @@
     &--short {
         width: 40px;
     }
+
+    &--absolute {
+        @extend %absolute;
+        bottom: -5px;
+    }
 }

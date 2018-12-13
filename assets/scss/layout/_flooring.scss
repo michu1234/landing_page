@@ -5,6 +5,7 @@
 @import '../helpers/mixins/responsive';
 
 .flooring {
+    padding-bottom: 30px;
 
     &__list {
     font-size: 1.4rem;
@@ -34,4 +35,8 @@
         }
     }
     }
+}
+
+.flooring__img {
+    max-width: 100%;
 }

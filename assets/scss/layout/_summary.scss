@@ -4,3 +4,35 @@
 @import '../helpers/mixins/list-reset';
 @import '../helpers/mixins/responsive';
 
+
+.summary {
+    background: $medium-gray;
+
+    h3 {
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgb(190, 190, 190);
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    ul {
+        font-size: 1.4rem;
+        list-style-image: url("../img/bullet.png");
+
+         
+        li {
+            line-height: 24px;
+            padding-left: 30px;
+            padding-top: 3px;
+            color: $normal-navy;
+            font-weight: 600;
+        }
+
+    }
+
+    &__wrapper {
+        @extend %relative;
+    }
+}

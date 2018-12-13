@@ -9,7 +9,14 @@
     color: $pure-white;
 
     &__item {
-        text-align: left !important;
+        p {
+            text-align: left;
+            padding-left: 30px;
+        }
+
+        a {
+            text-align: left;
+        }
     }
 
 }

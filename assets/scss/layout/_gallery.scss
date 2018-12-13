@@ -10,6 +10,15 @@
  }
  img {
      max-width: 100%;
+     padding: 10px 0 10px 0;
+
+     @include media-query(tablet){
+         padding: 0;
+     }
+ }
+
+ .divider:nth-child(4) {
+     margin-bottom: 30px;
  }
 
 }
