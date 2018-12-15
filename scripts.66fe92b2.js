@@ -10725,6 +10725,33 @@ module.hot.accept(reloadCSS);
 var _TweenMax = require("gsap/TweenMax");
 
 require("../scss/main.scss");
+
+var scrollButton = document.querySelectorAll(".btn__scroll");
+var popupButton = document.querySelectorAll(".btn__popup");
+var footer = document.querySelector("footer");
+var flooring = document.querySelector(".flooring");
+var popup = document.querySelector(".popup");
+var popupClose = document.querySelector(".popup__close");
+var scrollToElements = [footer, flooring]; // scrolling to
+
+scrollButton.forEach(function (el, i) {
+  el.addEventListener('click', function () {
+    scrollToElements[i].scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
+  });
+}); //   popup on/off
+
+popupButton.forEach(function (el, i) {
+  el.addEventListener('click', function () {
+    popup.classList.add("popup--visible");
+  });
+});
+popupClose.addEventListener('click', function () {
+  popup.classList.remove("popup--visible");
+});
 },{"gsap/TweenMax":"node_modules/gsap/TweenMax.js","../scss/main.scss":"assets/scss/main.scss"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -10752,7 +10779,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49875" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55863" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
