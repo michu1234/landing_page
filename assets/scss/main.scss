@@ -8,6 +8,7 @@
 @import './base/base';
 @import './base/bootstrap-grid.min';
 @import './base/normalize';
+@import './base/fontello';
 
 // components
 @import './components/button.scss';
@@ -27,6 +28,7 @@
 @import './layout/maintenance';
 @import './layout/projects';
 @import './layout/questions';
+@import './layout/slider';
 @import './layout/summary';
 
 // helpers

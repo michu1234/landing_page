@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .text--bold {
   font-weight: 700; }
 
@@ -54,7 +55,8 @@ html {
   font-size: 62.5%;
   font-family: 'Raleway';
   background-color: #ffffff;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 a {
   color: #ffffff !important;
@@ -2090,6 +2092,66 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: 'fontello';
+  src: url("fontello.5ba468ce.eot?23255707");
+  src: url("fontello.5ba468ce.eot?23255707#iefix") format("embedded-opentype"), url("fontello.50cd5947.woff2?23255707") format("woff2"), url("fontello.871433a6.woff?23255707") format("woff"), url("fontello.8c712a45.ttf?23255707") format("truetype"), url("fontello.caa62654.svg?23255707#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?23255707#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-pause:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-play-outline:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-circle-empty:before {
+  content: '\f10c'; }
+
+/* '' */
+.icon-circle:before {
+  content: '\f111'; }
+
+/* '' */
 h2, h3, p, .btn, footer, .maintenance, .questions__h2, .questions__p {
   text-align: center; }
 
@@ -2511,7 +2573,7 @@ body, .flooring__list li, .summary__wrapper {
 
 .maintenance {
   background: #F5F5F5;
-  padding: 30px 0 30px 0; }
+  padding: 30px 0 50px 0; }
   .maintenance ul {
     font-size: 1.4rem;
     list-style: none;
@@ -2548,7 +2610,12 @@ body, .flooring__list li, .summary__wrapper {
   .projects button {
     margin: 10px 0; }
   .projects img {
-    max-width: 100%; }
+    max-width: 100%;
+    transition: all .3s;
+    cursor: pointer; }
+    .projects img:hover {
+      filter: brightness(115%);
+      transition: filter .3s; }
   @media screen and (min-width: 768px) {
     .projects button {
       margin: 0; } }
@@ -2572,7 +2639,7 @@ body, .flooring__list li, .summary__wrapper {
   cursor: pointer; }
 
 .questions {
-  margin-top: 300px;
+  margin-top: 20px;
   padding-bottom: 20px; }
   .questions__h2 {
     max-width: 752px;
@@ -2589,6 +2656,112 @@ body, .flooring__list li, .summary__wrapper {
       text-align: left; }
     .questions button {
       margin: 0; } }
+
+.slider {
+  position: relative;
+  text-align: center;
+  margin-top: 128px; }
+  .slider h1 {
+    width: 100%;
+    color: #ffffff;
+    text-shadow: 0 0 10px #1b1b1b;
+    opacity: 0;
+    padding-top: 50px;
+    font-size: 2rem; }
+    @media screen and (min-width: 400px) {
+      .slider h1 {
+        padding-top: 50px;
+        font-size: 3rem; } }
+    @media screen and (min-width: 900px) {
+      .slider h1 {
+        font-size: 3.5rem;
+        padding-top: 110px; } }
+    @media screen and (min-width: 1100px) {
+      .slider h1 {
+        font-size: 4rem;
+        padding-top: 40px; } }
+    @media screen and (min-width: 1380px) {
+      .slider h1 {
+        font-size: 5rem; } }
+  .slider p {
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.278);
+    max-width: 1321px;
+    width: 100%;
+    padding: 20px 0 20px;
+    font-family: 'Raleway';
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+    line-height: 16px;
+    font-size: 16px;
+    border-radius: 10px; }
+    @media screen and (min-width: 1100px) {
+      .slider p {
+        line-height: 20px;
+        font-size: 20px;
+        padding-top: 40px; } }
+  .slider .btn {
+    background: #333386;
+    border: 2px solid #333386;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 16px 10px;
+    display: inline-block;
+    outline: 0;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 25px;
+    text-transform: uppercase !important;
+    margin-top: 20px;
+    font-weight: bold; }
+    @media screen and (min-width: 1320px) {
+      .slider .btn {
+        font-size: 16px;
+        margin-top: 40px; } }
+  .slider__description {
+    opacity: 0;
+    margin: 0 auto;
+    padding: 0 10px 0 10px; }
+  .slider__item {
+    position: absolute;
+    top: -30px; }
+    .slider__item img {
+      max-height: 500px; }
+    @media screen and (min-width: 1260px) {
+      .slider__item img {
+        max-width: 100%;
+        width: 100%; } }
+  .slider__controls {
+    position: absolute;
+    z-index: 5;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .slider .demo-icon {
+    font-size: 1.2rem;
+    color: #ffffff;
+    cursor: pointer; }
+  .slider .icon-play-outline {
+    top: 0;
+    left: 49%; }
+  .slider .icon-circle {
+    top: 0;
+    left: 52%;
+    opacity: 0; }
+  .slider .icon-circle-empty {
+    top: 0;
+    left: 52%; }
+  .slider .circle2 {
+    top: 0;
+    left: 55%;
+    opacity: 0; }
+  .slider .icon2 {
+    top: 0;
+    left: 55%; }
+  .slider .icon-pause {
+    top: 0;
+    left: 58%; }
 
 h2, h3, p, .btn, footer, .maintenance, .questions__h2, .questions__p {
   text-align: center; }

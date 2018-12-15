@@ -19,6 +19,13 @@
 
     img {
         max-width: 100%;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover {
+            filter: brightness(115%);
+            transition: filter .3s;
+        }
     }
 
     @include media-query(tablet) {
