@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "gsap": "^2.0.2",
-    "sass": "^1.15.2"
+    "sass": "^1.15.2",
+    "scroll-to-element": "^2.0.2"
   }
 }

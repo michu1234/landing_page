@@ -12,9 +12,18 @@
     text-transform: uppercase;
     @extend %pointer;
     font-size: 1.2rem;
-    padding: 16px 23px 15px;
+    padding: 16px 23px 16px;
     @extend %text--center;
     border-radius: 20px;
     border: none;
     font-family: 'Raleway-Bold';
+    transition: background .3s;
+
+    &:hover {
+        color: $hell-black;
+        border: 2px solid $normal-navy;
+        background: transparent;
+        transition: background .4s;
+        padding: 14px 21px 14px;
+    }
 }

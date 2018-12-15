@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <nav class="">
         <div class="container d-flex flex-column flex-md-row">
             <div class="nav__logo col-md-5"><img src="./assets/img/logo.jpg" alt=""></div>
@@ -22,7 +23,7 @@
                         <img src="./assets/img/phone.jpg" alt="">
                     </div>
                     <p class="nav__phone">(847) 316-0224</p>
-                </div><button class="btn">Click For Free Estimate!</button>
+                </div><button class="btn btn__popup">Click For Free Estimate!</button>
             </div>
         </div>
     </nav>
@@ -45,7 +46,7 @@
                     your flooring needs. Whether it be sanding, staining, refinishing, restoration, installation or
                     general advice, we're here to help! Contact us today.</p>
             </div>
-            <div class="questions__button col-md-2 d-flex justify-content-center align-items-center"><button class="btn">our
+            <div class="questions__button col-md-2 d-flex justify-content-center align-items-center"><button class="btn btn__scroll">our
                     services</button></div>
         </div>
         <hr class="divider divider--short" />
@@ -98,7 +99,7 @@
 
 
 
-            <div class="projects__button d-flex justify-content-center"><button class="btn">about us</button></div>
+            <div class="projects__button d-flex justify-content-center"><button class="btn btn__scroll">about us</button></div>
         </div>
     </section>
 
@@ -132,7 +133,7 @@
 
             <div class="gallery__button d-flex justify-content-center align-items-center">
                 <h3 class="gallery__h3">contact us for a quote</h3>
-                <button class="btn">get a quote</button>
+                <button class="btn btn__popup">get a quote</button>
             </div>
 
         </div>
@@ -174,7 +175,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="flooring__btn d-flex justify-content-center align-items-center"><button class="btn">free
+            <div class="flooring__btn d-flex justify-content-center align-items-center"><button class="btn btn__popup">free
                     estimate quote</button></div>
         </div>
     </section>
@@ -274,7 +275,7 @@
 
 
     <section class="estimate d-flex justify-content-center align-items-center">
-        <button class="btn">free estimate quote</button>
+        <button class="btn btn__popup">free estimate quote</button>
     </section>
 
 
@@ -356,6 +357,29 @@
 
 
 
+<!-- popup -->
+
+    <div class="popup">
+        <div class="popup__close">×</div>
+            <form action="" class="d-flex flex-column">
+                <label for="">Name <span class="text--important">*</span></label>
+                <input type="text">
+                <div class="d-flex flex-column flex-sm-row justify-content-between">
+                    <div class="input__wrapper d-flex flex-column">
+                        <label for="">Phone <span class="text--important">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="input__wrapper d-flex flex-column">
+                        <label for="">Email <span class="text--important">*</span></label>
+                        <input type="text">
+                    </div>
+                </div>
+                <label for="">Message <span class="text--important">*</span></label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+        
 
 
     <script src="./assets/js/scripts.js"></script>

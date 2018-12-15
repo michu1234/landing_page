@@ -25,6 +25,11 @@ html {
     font-size: 62.5%;
     font-family: 'Raleway';
     background-color: $pure-white;
+    box-sizing: border-box;
+}
+
+body {
+    @extend %relative;
 }
 
 a {

@@ -16,7 +16,8 @@ nav {
     background-color: $pure-white;
     box-shadow: 0 0 10px $darker-gray;
     z-index: 5;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+
 
     .nav__phone {
         font-size: 1.4rem;
@@ -29,7 +30,12 @@ nav {
     }
 
         img {
-            padding: 10px;
+            padding: 0 2px 0 2px;
+            
+
+            @include media-query(tablet) {
+                padding: 10px;
+            }
         }
 
 
@@ -45,6 +51,10 @@ nav {
             .nav__logo {
                 text-align: left;
             }
+        }
+
+        @include media-query(tablet) {
+            padding-bottom: 5px;
         }
 
         @media screen and (min-width: 1200px) {

@@ -7,6 +7,7 @@
 
 .summary {
     background: $medium-gray;
+    padding: 20px 0 20px 0;
 
     h3 {
         padding-bottom: 15px;
@@ -38,6 +39,16 @@
 
     &__img {
         text-align: center;
+        outline: 1px solid $medium-gray;
+        padding: 4px;
+
+        &:hover {
+            outline: 1px solid $normal-navy;
+            filter: sepia(10%);
+            cursor: pointer;
+            transition: all .3s;
+            padding: 4px;
+        }
     }
 
     @include media-query(mobile) {

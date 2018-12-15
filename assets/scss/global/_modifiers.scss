@@ -2,3 +2,12 @@
     font-weight: 700;
 }
 
+.text--important {
+    color: rgb(243, 0, 0);
+}
+
+.popup--visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: all !important;
+}
