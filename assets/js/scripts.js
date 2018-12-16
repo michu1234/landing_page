@@ -1,9 +1,10 @@
+import 'babel-polyfill';
+
 import {
     TweenLite,
     TimelineLite
 } from "gsap/TweenMax";
 import '../scss/main.scss';
-
 
 
 let scrollButton = [...document.querySelectorAll(".btn__scroll")];
