@@ -19,6 +19,10 @@
     font-family: 'Raleway-Bold';
     transition: background .3s;
 
+    &__nav:hover {
+        padding: 8px 10px 8px !important;
+    }
+
     &:hover {
         color: $hell-black;
         border: 2px solid $normal-navy;

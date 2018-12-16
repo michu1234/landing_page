@@ -29,11 +29,24 @@ nav {
         text-align: center;
     }
 
+    .nav__icon {
+        margin-top: -20px;
+
+        @media screen and (min-height: 641px) {
+            margin-top: 0px;
+        }
+    }
+
     .nav__brands img {
         max-width: 50px;
+        display: none;
 
         @include media-query(tablet) {
             max-width: 100%;
+        }
+
+        @media screen and (min-height: 641px) {
+            display: block;
         }
     }
 

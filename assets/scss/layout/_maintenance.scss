@@ -9,6 +9,10 @@
     padding: 30px 0 50px 0; 
     @extend %text--center;
 
+    &__item {
+        padding: 0 5px 0 5px;
+    }
+
     ul {
         font-size: 1.4rem;
         @include list-reset;
