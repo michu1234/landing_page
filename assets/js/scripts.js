@@ -1,7 +1,5 @@
 import {
     TweenLite,
-    TweenMax,
-    Power2,
     TimelineLite
 } from "gsap/TweenMax";
 import '../scss/main.scss';
