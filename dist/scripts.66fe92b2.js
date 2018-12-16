@@ -10726,8 +10726,18 @@ var _TweenMax = require("gsap/TweenMax");
 
 require("../scss/main.scss");
 
-var scrollButton = Array.from(document.querySelectorAll(".btn__scroll"));
-var popupButton = Array.from(document.querySelectorAll(".btn__popup"));
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+var scrollButton = _toConsumableArray(document.querySelectorAll(".btn__scroll"));
+
+var popupButton = _toConsumableArray(document.querySelectorAll(".btn__popup"));
+
 var footer = document.querySelector("footer");
 var flooring = document.querySelector(".flooring");
 var popup = document.querySelector(".popup");
@@ -10755,12 +10765,17 @@ popupClose.addEventListener('click', function () {
 // slider
 
 var slider = document.querySelector(".slider");
-var slides = Array.from(document.querySelectorAll('.slider__item'));
-var h1 = Array.from(document.querySelectorAll('.slider__h1'));
-var description = Array.from(document.querySelectorAll('.slider__description'));
+
+var slides = _toConsumableArray(document.querySelectorAll('.slider__item'));
+
+var h1 = _toConsumableArray(document.querySelectorAll('.slider__h1'));
+
+var description = _toConsumableArray(document.querySelectorAll('.slider__description'));
+
 var button = document.querySelector('.btn__slider'); // controls
 
-var dots = Array.from(document.querySelectorAll('.icon-circle-empty'));
+var dots = _toConsumableArray(document.querySelectorAll('.icon-circle-empty'));
+
 var tl = new TimelineMax({
   repeat: 123
 });

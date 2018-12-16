@@ -8,8 +8,8 @@ import '../scss/main.scss';
 
 
 
-let scrollButton = Array.from(document.querySelectorAll(".btn__scroll"));
-let popupButton = Array.from(document.querySelectorAll(".btn__popup"));
+let scrollButton = [...document.querySelectorAll(".btn__scroll")];
+let popupButton = [...document.querySelectorAll(".btn__popup")];
 let footer = document.querySelector("footer");
 let flooring = document.querySelector(".flooring");
 let popup = document.querySelector(".popup");
@@ -40,20 +40,17 @@ popupClose.addEventListener('click', ()=> {
     })
 
 
-
-
 // slider
-
 
 
 // slider
 let slider = document.querySelector(".slider");
-let slides = Array.from(document.querySelectorAll('.slider__item'));
-let h1 = Array.from(document.querySelectorAll('.slider__h1'));
-let description = Array.from(document.querySelectorAll('.slider__description'));
+let slides = [...document.querySelectorAll('.slider__item')];
+let h1 = [...document.querySelectorAll('.slider__h1')];
+let description = [...document.querySelectorAll('.slider__description')];
 let button = document.querySelector('.btn__slider');
 // controls
-let dots = Array.from(document.querySelectorAll('.icon-circle-empty'));
+let dots = [...document.querySelectorAll('.icon-circle-empty')];
 let tl = new TimelineMax({
     repeat: 123
 });
