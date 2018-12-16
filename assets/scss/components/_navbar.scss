@@ -15,7 +15,7 @@ nav {
     align-items: center;
     background-color: $pure-white;
     box-shadow: 0 0 10px $darker-gray;
-    z-index: 5;
+    z-index: 544;
     padding-bottom: 10px;
 
 
@@ -29,6 +29,14 @@ nav {
         text-align: center;
     }
 
+    .nav__brands img {
+        max-width: 50px;
+
+        @include media-query(tablet) {
+            max-width: 100%;
+        }
+    }
+
         img {
             padding: 0 2px 0 2px;
             
@@ -40,8 +48,13 @@ nav {
 
 
         button {
-            min-width: 205px;
             margin-top: -15px;
+            font-size: 1rem !important;
+            padding: 10px 15px 10px 15px !important;
+
+            @include media-query(tablet) {
+                max-width: 100%;
+            }
         }
 
         @include media-query(tablet) {

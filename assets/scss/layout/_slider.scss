@@ -1,7 +1,11 @@
 .slider {
     position: relative;
     text-align: center;
-    margin-top: 128px;
+    margin-top: 213px;
+
+    @include media-query(tablet) {
+        margin-top: 128px;
+    }
 
     h1 {
         width: 100%;

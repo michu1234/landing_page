@@ -10726,8 +10726,8 @@ var _TweenMax = require("gsap/TweenMax");
 
 require("../scss/main.scss");
 
-var scrollButton = document.querySelectorAll(".btn__scroll");
-var popupButton = document.querySelectorAll(".btn__popup");
+var scrollButton = Array.from(document.querySelectorAll(".btn__scroll"));
+var popupButton = Array.from(document.querySelectorAll(".btn__popup"));
 var footer = document.querySelector("footer");
 var flooring = document.querySelector(".flooring");
 var popup = document.querySelector(".popup");
@@ -10756,8 +10756,8 @@ popupClose.addEventListener('click', function () {
 
 var slider = document.querySelector(".slider");
 var slides = Array.from(document.querySelectorAll('.slider__item'));
-var h1 = document.querySelectorAll('.slider__h1');
-var description = document.querySelectorAll('.slider__description');
+var h1 = Array.from(document.querySelectorAll('.slider__h1'));
+var description = Array.from(document.querySelectorAll('.slider__description'));
 var button = document.querySelector('.btn__slider'); // controls
 
 var dots = Array.from(document.querySelectorAll('.icon-circle-empty'));
