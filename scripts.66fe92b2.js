@@ -10779,7 +10779,7 @@ var dots = _toConsumableArray(document.querySelectorAll('.icon-circle-empty'));
 var tl = new TimelineMax({
   repeat: 123
 });
-var tl_text = new TimelineMax({
+var tl_text = new _TweenMax.TimelineLite({
   repeat: 123
 });
 
