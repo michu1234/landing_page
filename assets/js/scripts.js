@@ -52,7 +52,7 @@ let dots = [...document.querySelectorAll('.icon-circle-empty')];
 let tl = new TimelineMax({
     repeat: 123
 });
-let tl_text = new TimelineMax({
+let tl_text = new TimelineLite({
     repeat: 123
 });
 
